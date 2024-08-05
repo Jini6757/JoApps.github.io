@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Airdrop</title>
+    <style>
+        /* 1. 4D Text */
+        .text-4d {
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            animation: textAnimation 3s infinite;
+        }
+        
+        @keyframes textAnimation {
+            0% { transform: rotateX(0) rotateY(0); }
+            50% { transform: rotateX(15deg) rotateY(15deg); }
+            100% { transform: rotateX(0) rotateY(0); }
+        }
+
+        /* 2. Attractive Background */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient Background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+
+        /* 3. Round Button with Links and Images */
+        .button {
+            margin: 20px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            box-shadow:5px 2px 10px #15cbff;
+            //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: box-shadow 0.3s, background-color 0.3s;
+            
+        }
+
+        .button:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            background-color: #f0f0f0;
+        }
+
+        /* 4. Button Shadows */
+        #links {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #links img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        /* 5. Footer Text */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8em;
+            color: #ffffff;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 4D Text -->
+    <div class="text-4d">Welcome to Jo Airdrop</div>
+
+    <!-- 3. Round Button with Links and Images -->
+    <button class="button"><a style="text-decoration:none;" href="2.html">Next</a></button>
+    
+
+    <!-- 5. Footer Text -->
+    <div class="footer">Code and design by JO | <a href="https://t.me/Ej24y2" target="_blank">Join my channel</a>
+    </div>
+
+    <script>
+        function toggleLinks() {
+            const linksDiv = document.getElementById('links');
+            linksDiv.style.display = linksDiv.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
